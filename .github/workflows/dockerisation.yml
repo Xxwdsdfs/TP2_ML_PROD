@@ -20,13 +20,13 @@ jobs:
       - name: Log in to DockerHub
         uses: docker/login-action@v2
         with:
-          username: "Xxwdsdfs"
+          username: "xxwdsdfs"
           password: "Axoues75012"
 
       # Étape 3 : Construire l'image Docker
       - name: Build Docker Image
-        run: docker build -t Xxwdsdfs/api-testing-js-app:latest .
+        run: docker build -t xxwdsdfs/api-testing-js-app:latest .
 
       # Étape 4 : Publier l'image Docker sur DockerHub
       - name: Push Docker Image
-        run: docker push Xxwdsdfs/api-testing-js-app:latest
+        run: docker push xxwdsdfs/api-testing-js-app:latest
