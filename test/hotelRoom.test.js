@@ -6,7 +6,7 @@ const HotelRoom = require('../models/HotelRoom'); // Import the HotelRoom model
 jest.setTimeout(30000);
 // Connect to a test database before running tests
 beforeAll(async () => {
-    const dbURI = "mongodb+srv://mogu:mogu@cluster0.t70f3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+    const dbURI = "mongodb+srv://axelbenoist:y0XNfoZkaUF06f8D@cluster0.m8dfh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
     await mongoose.connect(dbURI);
     await HotelRoom.deleteMany();
 });
